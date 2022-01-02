@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_flow"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantListingFragment"
+            app:destination="@id/restaurantListingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.restaurantdetail.RestaurantDetailFragment"
+        android:label="RestaurantDetailFragment" >
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_mealDetailFragment"
+            app:destination="@id/mealDetailFragment" />
+        <argument
+            android:name="restaurantId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantListingFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.restaurantlisting.RestaurantListingFragment"
+        android:label="RestaurantListingFragment" >
+        <action
+            android:id="@+id/action_restaurantListingFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+        <argument
+            android:name="cuisineId"
+            app:argType="integer" />
+        <argument
+            android:name="cuisineName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealDetailFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.mealdetail.MealDetailFragment"
+        android:label="MealDetailFragment" >
+        <argument
+            android:name="mealId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.basket.BasketFragment"
+        android:label="BasketFragment" >
+        <action
+            android:id="@+id/action_basketFragment_to_lastOrderFragment"
+            app:destination="@id/lastOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastOrderFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.lastorder.LastOrderFragment"
+        android:label="LastOrderFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+</navigation>

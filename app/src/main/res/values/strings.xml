@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SampleDeliveryApp</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_menu_text">Browse the menu and order directly from the application</string>
+    <string name="onboarding_delivery_text">Your order will be immediately collected and sent by out courier</string>
+    <string name="onboarding_food_text">Pick up delivery at your door and enjoy groceries</string>
+    <string name="home_page_title">Fast and
+        \nDelicious Food</string>
+    <string name="restaurant_description">Konumumuz</string>
+    <string name="home_restaurants_title">Restaurants</string>
+    <string name="home_cuisine_title"><![CDATA[Cuisine & Categories]]></string>
+    <string name="restaurant_meals_title">Meals</string>
+    <string name="favorite_page_title">My Favorite Restaurants</string>
+    <string name="add_basket_text">Add to Basket</string>
+    <string name="response_not_found">Ups!... no results found</string>
+    <string name="meal_default_num">1</string>
+    <string name="total_price_title">Total Price</string>
+    <string name="last_orders_title">Last Orders</string>
+    <string name="profile_title">My Profile</string>
+    <string name="phone_number_title">Phone Number</string>
+    <string name="name_title">Name Surname</string>
+    <string name="address_title">Address</string>
+    <string name="hint_phone_number">Give your phone number</string>
+    <string name="profile_save">Save</string>
+    <string name="hint_phone">Enter your phone numbber</string>
+    <string name="hint_name">Enter your name and surname</string>
+    <string name="hint_address">Enter your address</string>
+    <string name="hint_password">* * * * * *</string>
+    <string name="password_title">Password</string>
+    <string name="hint_email">Enter your email address</string>
+    <string name="hint_password_text">Enter your password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="login_text">Login</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="logout_text">Logout</string>
+
+    <string name="price_string">%1$s%2$.2f</string>
+    <string name="cuisine_string">%1$s Restaurants</string>
+    <string name="calorie_string"> %2$.2f %1$s</string>
+    <string name="quantity_string"> %2$.2f %1$s</string>
+    <string name="basket_page_title">My Basket</string>
+    <string name="cuisine_item_string">%1$s</string>
+    <string name="meal_number_string">%2$d%1$s</string>
+
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_flow"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/onboardingBaseFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.onboarding.OnboardingBaseFragment"
+        android:label="OnboardingBaseFragment" >
+        <action
+            android:id="@+id/action_onboardingBaseFragment_to_loginFragment"
+            app:destination="@id/entryFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingBaseFragment"
+            app:destination="@id/onboardingBaseFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/entryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.zerdi.sampledeliveryapp.ui.entry.EntryFragment"
+        android:label="EntryFragment" />
+
+</navigation>
