@@ -32,7 +32,7 @@ Recyclerview
 Lottie
 
 ## Usage
-![SampleDeliveryApp]<img src="https://github.com/ZeynelErdiKarabulut/SampleDeliveryApp/blob/master/usage/app.gif" width="300" height="600">
+!<img src="https://github.com/ZeynelErdiKarabulut/SampleDeliveryApp/blob/master/usage/app.gif" width="350" height="650">
 
 
 
